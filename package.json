@@ -1,0 +1,22 @@
+{
+  "name": "mvp",
+  "version": "1.0.0",
+  "description": "Study Room Booking System",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "firebase": "^5.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "webpack": "^4.29.6"
+  }
+}
