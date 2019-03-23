@@ -5,18 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "build": "webpack -d -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "firebase": "^5.9.0"
+    "firebase": "^5.9.0",
+    "firebase-admin": "^7.1.1",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "nodemon": "^1.18.10",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "webpack": "^4.29.6"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
