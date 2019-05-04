@@ -6,6 +6,7 @@ const port = 3838
 const app = express();
 
 const bookings = require('../database/bookings.js');
+//const bookingsRef = require('../database/bookingsRef.js');
 
 app.use(express.static(path.join(__dirname, '../dist')));
 
@@ -18,5 +19,12 @@ app.listen(port, ()=>{
 
 app.get("/bookings", (req, res)=>{
    console.log('bookings requested')
+   //bookingsRef.orderByChild('room');
    res.send(bookings);
+})
+
+app.get("/rooms", (req, res)=>{
+  console.log("rooms requested");
+  let rooms = require('../mockRoomData.js');
+  res.send(rooms);
 })
