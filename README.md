@@ -4,7 +4,7 @@ SpaceSaver is an app designed for staff at public libraries to easily manage boo
 ## Getting Started
 Fork or download repository.   
 Run 'npm install' to install all necessary dependencies.  
-Run 'npm build' to build with webpack/babel.
+Run 'npm build' to build with webpack/babel.  
 Run 'npm start' to get the server up and running.   
 The app will be hosted at 'localhost:3838.'
 
