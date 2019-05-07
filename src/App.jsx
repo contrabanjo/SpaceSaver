@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import moment from 'moment';
 
-import Table from '@material-ui/core/Table'
+import Grid from '@material-ui/core/Grid'
 import HourDisplay from './components/HourDisplay.jsx'
 import RoomDisplay from './components/RoomDisplay.jsx'
 
@@ -44,17 +44,15 @@ class App extends React.Component{
           roomBookings.push(booking);
         }
       })
-      return <RoomDisplay startTime={moment(room.openHours.start)} duration={8} currentBookings={roomBookings} roomName={room.name}/>
+      return <Grid item={true}> <RoomDisplay startTime={moment(room.openHours.start)} duration={8*4} currentBookings={roomBookings} roomName={room.name}/> </Grid>
     })
   }
   render(){
     return (
-      <div>
-        <Table>
-          <HourDisplay startTime={moment({hours: 10})} duration={8}/>
+        <Grid container={true}>
+          <Grid item={true}><HourDisplay startTime={moment({hours: 10})} duration={8*4}/></Grid>
           {this.generateRooms()}
-        </Table>
-      </div>
+        </Grid>
     )
   }
 }

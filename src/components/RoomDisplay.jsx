@@ -1,7 +1,7 @@
 import React from "react";
 import Cell from "./Cell.jsx";
 import moment from "moment";
-import TableRow from "@material-ui/core/TableRow"
+import Grid from "@material-ui/core/Grid"
 
 
 function RoomDisplay(props) {
@@ -24,15 +24,15 @@ function RoomDisplay(props) {
     })
     hours.push([bgColor, text, booked, hour.toISOString(), align]);
 
-    props.startTime.add(1, "hour");
+    props.startTime.add(15, "minutes");
   }
 
   return (
-    <TableRow>
+    <Grid container={true} direction={'column'}>
         {hours.map(item => {
           return <Cell color={item[0]} text={item[1]} booked={item[2]} time={item[3]} room={props.roomName} align={item[4]} />;
         })}
-    </TableRow>
+    </Grid>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import TableCell from '@material-ui/core/TableCell'
+import Grid from '@material-ui/core/Grid'
 
 
 class Cell extends React.Component{
@@ -44,7 +44,7 @@ class Cell extends React.Component{
   }
 
   render(){
-    return <TableCell onClick={this.onClick} padding='none' align={this.props.align} style={{ background: this.state.booked ? '#92D177' : this.props.color}}>{this.state.text}</TableCell>;
+    return <Grid item={true} onClick={this.onClick} padding='none' align={this.props.align} style={{ background: this.state.booked ? '#92D177' : this.props.color}}>{this.state.text}</Grid>;
   }
 }
 
