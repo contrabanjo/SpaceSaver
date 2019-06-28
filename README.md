@@ -16,6 +16,6 @@ npm
 
 ## Authors
 Corrie Grimshaw  
-George Fekaris
+
 
 
