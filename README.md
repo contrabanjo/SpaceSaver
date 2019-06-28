@@ -1,4 +1,3 @@
-![Image of Yaktocat](https://imgur.com/a/1JCtnVv)
 
 # SpaceSaver
 SpaceSaver is an app designed for staff at public libraries to easily manage booking of their public study rooms. Its user-friendly UI allows staff to easily retrieve and modify study room data, and the lighting fast back-end means an end to booking conflicts.
@@ -19,5 +18,5 @@ npm
 ## Authors
 Corrie Grimshaw  
 
-
+![screenshot](https://imgur.com/aGVPwE8)
 
